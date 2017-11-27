@@ -44,10 +44,5 @@ namespace Clothing.Repositories
                          select clothes).ToList();
             return price;
         }
-
-        public void GetTotal(double amount)
-        {
-            double price = 0;
-        }
     }
 }

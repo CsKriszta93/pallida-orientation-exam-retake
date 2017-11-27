@@ -1,6 +1,5 @@
 ﻿using Clothing.Repositories;
 using Microsoft.AspNetCore.Mvc;
-using System.Linq;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
