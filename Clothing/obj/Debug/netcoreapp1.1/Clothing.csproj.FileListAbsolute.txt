@@ -1,0 +1,12 @@
+C:\Users\Kriszta\Documents\Greenfox\pallida-orientation-exam-retake\Clothing\bin\Debug\netcoreapp1.1\Clothing.deps.json
+C:\Users\Kriszta\Documents\Greenfox\pallida-orientation-exam-retake\Clothing\bin\Debug\netcoreapp1.1\Clothing.runtimeconfig.json
+C:\Users\Kriszta\Documents\Greenfox\pallida-orientation-exam-retake\Clothing\bin\Debug\netcoreapp1.1\Clothing.runtimeconfig.dev.json
+C:\Users\Kriszta\Documents\Greenfox\pallida-orientation-exam-retake\Clothing\bin\Debug\netcoreapp1.1\Clothing.dll
+C:\Users\Kriszta\Documents\Greenfox\pallida-orientation-exam-retake\Clothing\obj\Debug\netcoreapp1.1\Clothing.csprojResolveAssemblyReference.cache
+C:\Users\Kriszta\Documents\Greenfox\pallida-orientation-exam-retake\Clothing\obj\Debug\netcoreapp1.1\Clothing.csproj.CoreCompileInputs.cache
+C:\Users\Kriszta\Documents\Greenfox\pallida-orientation-exam-retake\Clothing\obj\Debug\netcoreapp1.1\Clothing.AssemblyInfoInputs.cache
+C:\Users\Kriszta\Documents\Greenfox\pallida-orientation-exam-retake\Clothing\obj\Debug\netcoreapp1.1\Clothing.AssemblyInfo.cs
+C:\Users\Kriszta\Documents\Greenfox\pallida-orientation-exam-retake\Clothing\bin\Debug\netcoreapp1.1\appsettings.json
+C:\Users\Kriszta\Documents\Greenfox\pallida-orientation-exam-retake\Clothing\bin\Debug\netcoreapp1.1\Clothing.pdb
+C:\Users\Kriszta\Documents\Greenfox\pallida-orientation-exam-retake\Clothing\obj\Debug\netcoreapp1.1\Clothing.dll
+C:\Users\Kriszta\Documents\Greenfox\pallida-orientation-exam-retake\Clothing\obj\Debug\netcoreapp1.1\Clothing.pdb
