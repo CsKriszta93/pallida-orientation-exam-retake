@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Clothing.Repositories;
 using Microsoft.AspNetCore.Mvc;
-using Clothing.Repositories;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -19,10 +15,18 @@ namespace Clothing.Controllers
             this.clothRepository = clothRepository;
         }
 
+        [HttpGet]
         [Route("/warehouse")]
         public IActionResult Clothes()
         {
             return View(clothRepository.ListOfClothes());
+        }
+
+        [HttpPost]
+        [Route("/warehouse/summary")]
+        public IActionResult GetItem(string item)
+        {
+            return View(clothRepository.GetSelectedItem(item));
         }
     }
 }

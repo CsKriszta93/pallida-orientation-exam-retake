@@ -18,5 +18,13 @@ namespace Clothing.Repositories
         {
             return clothContext.warehouse.ToList();
         }
+
+        public Clothes GetSelectedItem(string item)
+        {
+            var cloth = (from clothes in clothContext.warehouse
+                         where clothes.item_name == item
+                         select clothes).FirstOrDefault();
+            return cloth;
+        }
     }
 }
