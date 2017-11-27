@@ -21,5 +21,32 @@
         <option value="xl">xl</option>
         <option value="xxl">xxl</option>
     </select>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Item Name</th>
+                <th>Manufacturer</th>
+                <th>Category</th>
+                <th>Quantity</th>
+                <th>Sub-total price</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in @Model)
+            {
+                <tr>
+                    <td>@item.item_name</td>
+                    <td>@item.manufacturer</td>
+                    <td>@item.category</td>
+                    <td></td>
+                    <td>@item.unit_price</td>
+                </tr>
+
+            }
+            <tr>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
