@@ -6,22 +6,22 @@
 </head>
 <body>
     <h1>Green Fox Fashion Web Store</h1>
-    <select>
-        <option value="jumper">Green Fox Jumper</option>
+    <select name="item" form="warehouse">
+        <option value="jumper" >Green Fox Jumper</option>
         <option value="swaeter">Half-Ip Ribbed Mock-Turtleneck Sweater</option>
         <option value="shirt">Green Fox Short-Sleeved Mesh Polo Shirt</option>
         <option value="cardigan">Wool/Alpaca Shawl Collar Cardigan</option>
         <option value="dress">Two-Tone Sleeveless Sheath Dress</option>
         <option value="skirt">Strecth Steamed Pencil Skirt</option>
     </select>
-    <select>
+    <select name="size" form="warehouse">
         <option value="s">s</option>
         <option value="m">m</option>
         <option value="l">l</option>
         <option value="xl">xl</option>
         <option value="xxl">xxl</option>
     </select>
-    <form action="/warehouse/summary" method="post">
+    <form action="/warehouse/summary" method="post" id="warehouse">
         <label for="quantity">Quantity</label>
         <input type="text" id="quantity" name="quantity"/>
         <button type="submit">GET TOTAL</button>

@@ -30,7 +30,7 @@ namespace Clothing.Controllers
         }
 
         [HttpPost]
-        [Route("/warehouse/summary")]
+        [Route("/warehouse/summary/{item}/{size}/{amount}")]
         public IActionResult GetItem([FromQuery] string item, [FromQuery] string size, [FromQuery] int amount)
         {
             clothRepository.AddClothes(item, amount, size);

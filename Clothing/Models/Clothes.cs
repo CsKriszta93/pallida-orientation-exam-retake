@@ -1,6 +1,6 @@
 ﻿namespace Clothing.Models
 {
-    public class Clothes
+    public class Clothes 
     {
         public int Id { get; set; }
         public string item_name { get; set; } 
