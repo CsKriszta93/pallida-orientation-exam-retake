@@ -9,3 +9,9 @@ C:\Users\Kriszta\Documents\Greenfox\pallida-orientation-exam-retake\Clothing.Int
 C:\Users\Kriszta\Documents\Greenfox\pallida-orientation-exam-retake\Clothing.IntegrationTest\obj\Debug\netcoreapp2.0\Clothing.IntegrationTest.csproj.CoreCompileInputs.cache
 C:\Users\Kriszta\Documents\Greenfox\pallida-orientation-exam-retake\Clothing.IntegrationTest\obj\Debug\netcoreapp2.0\Clothing.IntegrationTest.AssemblyInfoInputs.cache
 C:\Users\Kriszta\Documents\Greenfox\pallida-orientation-exam-retake\Clothing.IntegrationTest\obj\Debug\netcoreapp2.0\Clothing.IntegrationTest.AssemblyInfo.cs
+C:\Users\Kriszta\Documents\Greenfox\pallida-orientation-exam-retake\Clothing.IntegrationTest\bin\Debug\netcoreapp2.0\appsettings.json
+C:\Users\Kriszta\Documents\Greenfox\pallida-orientation-exam-retake\Clothing.IntegrationTest\bin\Debug\netcoreapp2.0\Clothing.IntegrationTest.pdb
+C:\Users\Kriszta\Documents\Greenfox\pallida-orientation-exam-retake\Clothing.IntegrationTest\bin\Debug\netcoreapp2.0\Clothing.dll
+C:\Users\Kriszta\Documents\Greenfox\pallida-orientation-exam-retake\Clothing.IntegrationTest\bin\Debug\netcoreapp2.0\Clothing.pdb
+C:\Users\Kriszta\Documents\Greenfox\pallida-orientation-exam-retake\Clothing.IntegrationTest\obj\Debug\netcoreapp2.0\Clothing.IntegrationTest.dll
+C:\Users\Kriszta\Documents\Greenfox\pallida-orientation-exam-retake\Clothing.IntegrationTest\obj\Debug\netcoreapp2.0\Clothing.IntegrationTest.pdb
