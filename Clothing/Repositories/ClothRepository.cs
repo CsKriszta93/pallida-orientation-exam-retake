@@ -26,5 +26,10 @@ namespace Clothing.Repositories
                          select clothes).FirstOrDefault();
             return cloth;
         }
+
+        public void AddClothes(Clothes clothes)
+        {
+            clothContext.warehouse.Add(clothes);
+        }
     }
 }

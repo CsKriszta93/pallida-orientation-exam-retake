@@ -22,11 +22,19 @@ namespace Clothing.Controllers
             return View(clothRepository.ListOfClothes());
         }
 
+        [HttpGet]
+        [Route("/warehouse/summary")]
+        public IActionResult Summary()
+        {
+            return View()
+        }
+
         [HttpPost]
         [Route("/warehouse/summary")]
         public IActionResult GetItem(string item)
         {
-            return View(clothRepository.GetSelectedItem(item));
+            clothRepository.GetSelectedItem(item);
+            return RedirectToAction("Summary");
         }
     }
 }
