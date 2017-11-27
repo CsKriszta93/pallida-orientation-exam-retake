@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Clothing.Repositories;
 using Microsoft.AspNetCore.Mvc;
-using Clothing.Repositories;
+using System.Linq;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -20,14 +17,14 @@ namespace Clothing.Controllers
         }
 
         [HttpGet]
-        [Route("/warehouse/query")]
-        public IActionResult JsonPrice([FromQuery] double price, [FromQuery] string type)
+        [Route("/warehouse/query/")]
+        public IActionResult JsonPrice([FromQuery] double price)
         {
             var list = clothRepository.ListOfClothes();
-            var clothes = (from item in list
-                           where item.unit_price < 50
-                           select item).ToList();
-            return Json(new { result = "ok", clothes = clothes });      
+            if (price < 50)
+            {
+                return Json(new { result = "ok", clothes = list });
+            }             
         }
     }
 }

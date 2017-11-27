@@ -27,12 +27,27 @@ namespace Clothing.Repositories
             return cloth;
         }
 
-        public void AddClothes(Clothes clothes, int amount)
+        public void AddClothes(string item, int amount, string size)
         {
             while (amount > 0)
             {
-                clothContext.warehouse.Add(clothes);
-            }       
+                clothContext.warehouse.Add(new Clothes {item_name = item, size = size);
+            }
+            clothContext.SaveChanges();
+        }
+
+        public List<Clothes> GetClothesPrices()
+        {
+            var list = ListOfClothes();
+            var price = (from clothes in list
+                         where clothes.unit_price > 50
+                         select clothes).ToList();
+            return price;
+        }
+
+        public void GetTotal(double amount)
+        {
+            double price = 0;
         }
     }
 }

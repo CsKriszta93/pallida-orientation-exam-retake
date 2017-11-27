@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace Clothing.Models
+﻿namespace Clothing.Models
 {
-    abstract class Amount
+    abstract class Amount : Clothes
     {
         abstract public int AmountOfClothes { get; set; }
     }

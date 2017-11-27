@@ -31,9 +31,9 @@ namespace Clothing.Controllers
 
         [HttpPost]
         [Route("/warehouse/summary")]
-        public IActionResult GetItem(string item, string size, int amount)
+        public IActionResult GetItem([FromQuery] string item, [FromQuery] string size, [FromQuery] int amount)
         {
-            clothRepository.GetSelectedItem(item);
+            clothRepository.AddClothes(item, amount, size);
             return RedirectToAction("Summary");
         }
     }
