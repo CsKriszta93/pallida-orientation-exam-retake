@@ -1,8 +1,7 @@
 ﻿using Clothing.Entities;
-using System;
+using Clothing.Models;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace Clothing.Repositories
 {
@@ -13,6 +12,11 @@ namespace Clothing.Repositories
         public ClothRepository(ClothContext clothContext)
         {
             this.clothContext = clothContext;
+        }
+
+        public List<Clothes> ListOfClothes()
+        {
+            return clothContext.warehouse.ToList();
         }
     }
 }
