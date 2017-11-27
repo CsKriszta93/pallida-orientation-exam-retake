@@ -44,5 +44,11 @@ namespace Clothing.Repositories
                          select clothes).ToList();
             return price;
         }
+
+        public double GetPrice(Clothes item, double amount)
+        {
+            double price = item.unit_price * amount;
+            return price;
+        }
     }
 }
