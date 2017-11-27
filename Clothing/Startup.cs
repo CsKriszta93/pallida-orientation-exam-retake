@@ -26,7 +26,7 @@ namespace Clothing
             Configuration = builder.Build();
 
             services.AddMvc();
-            services.AddDbContext<ClothContext>(options => options.UseSqlServer(Configuration["ConntectionStrings:ClothConnection"]));
+            services.AddDbContext<ClothContext>(options => options.UseSqlServer(Configuration["ConnectionStrings:ClothConnection"]));
             services.AddScoped<ClothRepository>();
         }
 
