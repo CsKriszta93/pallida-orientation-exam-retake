@@ -27,9 +27,12 @@ namespace Clothing.Repositories
             return cloth;
         }
 
-        public void AddClothes(Clothes clothes)
+        public void AddClothes(Clothes clothes, int amount)
         {
-            clothContext.warehouse.Add(clothes);
+            while (amount > 0)
+            {
+                clothContext.warehouse.Add(clothes);
+            }       
         }
     }
 }

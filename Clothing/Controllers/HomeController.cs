@@ -26,12 +26,12 @@ namespace Clothing.Controllers
         [Route("/warehouse/summary")]
         public IActionResult Summary()
         {
-            return View()
+            return View();
         }
 
         [HttpPost]
         [Route("/warehouse/summary")]
-        public IActionResult GetItem(string item)
+        public IActionResult GetItem(string item, string size, int amount)
         {
             clothRepository.GetSelectedItem(item);
             return RedirectToAction("Summary");
