@@ -31,7 +31,7 @@ namespace Clothing.Repositories
         {
             while (amount > 0)
             {
-                clothContext.warehouse.Add(new Clothes {item_name = item, size = size);
+                clothContext.warehouse.Add(new Clothes { item_name = item, size = size });
             }
             clothContext.SaveChanges();
         }
