@@ -17,11 +17,11 @@ namespace Clothing.Controllers
         }
 
         [HttpGet]
-        [Route("/warehouse/query/")]
-        public IActionResult JsonPrice([FromQuery] double price)
+        [Route("/warehouse/query/{price}/{type}")]
+        public IActionResult JsonPrice([FromQuery] double price, [FromQuery] string type)
         {
             var list = clothRepository.ListOfClothes();
-            if (price < 50)
+            if (price < 50 || type.Equals("lower"))
             {
                 return Json(new { result = "ok", clothes = list });
             }             
